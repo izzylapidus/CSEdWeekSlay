@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+  width: 100%;
+
+/*   LET'S ADD A CUTE FONT */
+  font-family: monospace;
+}
+
+/* LET'S ACTIVATE 😎 FLEX MODE 😎 */
+/*  .div {
+	display: flex;
+} */
+
+
+/* Notice: the . before the class name */
+.title {
+/*   border: 1px solid blue; */
+  text-align: center;
+
+/*   GRADIENTS ARE SO FUN */
+background-image: linear-gradient(red, orange, yellow);
+}  
+
+.icons-then {
+  display: flex;
+/*   border: 1px solid pink; */
+ justify-content: center;
+  align-items: flex-start;
+} 
+
+.icons-today {
+  display: flex;
+/*   border: 1px solid orange; */
+  justify-content: center;
+  align-items: flex-start;
+}
+ 
+/* No . needed because this is an HTML element */
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 20px;
+  border: 1px solid white;
+}
+
+.name { 
+/*   border: 1px solid red; */
+  text-align: center;
+  margin-top: -20px;
+}
+
+/* ANIMATIONS! */
+@keyframes example {
+	from {background-color: red;}
+	to {background-color: yellow;}
+}
+
+/* Element you're applying animation to */
+.box {
+  background-color: red;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
